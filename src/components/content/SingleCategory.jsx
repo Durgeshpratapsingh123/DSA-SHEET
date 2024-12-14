@@ -63,7 +63,7 @@ const SingleCategory = ({
                     fontFamily={'customFamily'}
                     fontStyle={'normal'}
                     color={isDarkMode ? 'defaultColor_dark' : 'defaultColor'}
-                    textDecorationLine={isCompleted ? 'line-through' : 'none'}
+                    // textDecorationLine={isCompleted ? 'line-through' : 'none'}
                 >
                     {categoryName}
                 </Text>
