@@ -36,7 +36,7 @@ const SingleCategory = ({
     return (
         <Flex
             className={'singleCategory'}
-            p={2}
+            p={4}
             flexDirection={'column'}
             display={filteredListOfQuestions()[1] ? 'flex' : 'none'}
         >

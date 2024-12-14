@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import "./global.css";
 
 import DSA from './components/index.jsx'
 

@@ -26,9 +26,9 @@ const SingleTopic = ({ data, selectedContentIndex }) => {
         <Link to={topicLink}>
             <Flex
                 className={'singleTopic'}
-                flexDirection={'row'}
+                flexDirection={'column'}
                 justifyContent={'space-between'}
-                alignItems={'center'}
+                // alignItems={'center'}
                 background={
                     isStarted
                         ? isDarkMode
@@ -38,9 +38,14 @@ const SingleTopic = ({ data, selectedContentIndex }) => {
                         ? 'topicStillBg_dark'
                         : 'topicStillBg'
                 }
-                p={2}
-                minH={'100px'}
-                borderRadius={16}
+                p={6}
+                minH={'250px'}
+                borderRadius={10}
+                // border={'1px solid'}
+                borderColor={
+                    isDarkMode ? 'indianFlag1BorderColor_dark' : 'indianFlag1BorderColor'
+                }
+                boxShadow={isDarkMode ? 'darkModeShadow' : 'xl'}
                 cursor={'pointer'}
                 onMouseEnter={() => {
                     setHover(true)
@@ -58,10 +63,10 @@ const SingleTopic = ({ data, selectedContentIndex }) => {
                 >
                     <Text
                         fontWeight={'lg'}
-                        fontSize={'2xl'}
+                        fontSize={'5xl'}
                         fontFamily={'customFamily'}
                         fontStyle={'normal'}
-                        textAlign={'center'}
+                        // textAlign={'center'}
                         color={
                             isDarkMode ? 'defaultColor_dark' : 'defaultColor'
                         }
@@ -81,13 +86,26 @@ const SingleTopic = ({ data, selectedContentIndex }) => {
                     >
                         {contentSubHeading}
                     </Text>
+                    <Text
+                        mt={2}
+                        fontWeight={'md'}
+                        fontSize={'md'}
+                        fontFamily={'customFamily'}
+                        fontStyle={'normal'}
+                        // textAlign={'center'}
+                        color={
+                            isDarkMode ? 'defaultColor_dark' : 'defaultColor'
+                        }
+                    >
+                        {completedQuestion}/{totalQuestion} Questions
+                    </Text>
                 </Flex>
 
                 {isStarted ? (
                     <CircularProgress
                         ml={6}
-                        size={'70px'}
-                        thickness={'8px'}
+                        size={'100px'}
+                        thickness={'10px'}
                         role={'progressbar'}
                         alignContent={'flex-end'}
                         justifyContent={'flex-end'}
@@ -115,7 +133,6 @@ const SingleTopic = ({ data, selectedContentIndex }) => {
                     <Text
                         w={'fit-content'}
                         h={'fit-content'}
-                        ml={5}
                         px={5}
                         py={2}
                         bg={isDarkMode ? 'startNowBg_dark' : 'startNowBg'}

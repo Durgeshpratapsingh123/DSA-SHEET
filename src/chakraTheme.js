@@ -10,7 +10,7 @@ const theme = extendTheme({
 
     // If you want to change color on Pick Random Click, Check ProgressBar.css.
     colors: {
-        fullPageColor: 'linear-gradient(140deg,rgb(235, 130, 130) 0%,rgb(72, 200, 232) 100%)',
+        fullPageColor: '#F5F5F5',
         adsBg: '#D9D9D9',
         textColor: '#000000A6',
         defaultColor: '#000000',
@@ -29,10 +29,11 @@ const theme = extendTheme({
         indianFlag3BorderColor: '#138808',
         indianFlag3Bg: '#1388080d',
         footerBg: 'fullPageColor',
-        topicProgressBg: '#808080',
-        topicStillBg: 'linear-gradient(140deg,rgb(146, 215, 233) 10%,rgb(242, 247, 220) 90%)',
+        topicProgressBg: 'linear-gradient(140deg,rgb(240, 242, 243) 10%,rgb(242, 247, 220) 90%)',
+        topicStillBg: '#fff',
         selectedQuestion: '#d0d7de3d',
-        startNowBg: 'linear-gradient(140deg,rgb(235, 130, 130) 0%,rgb(126, 204, 226) 100%)',
+        startNowBg: 'black',
+        lightModeShadow: 'xl',
 
         fullPageColor_dark: '#0d1117',
         adsBg_dark: '#21262d',
@@ -57,6 +58,7 @@ const theme = extendTheme({
         topicStillBg_dark: '#21262d',
         selectedQuestion_dark: '#21262d',
         startNowBg_dark: '#1f6feb',
+        darkModeShadow: 'dark-lg',
     },
     fonts: {
         customFamily:

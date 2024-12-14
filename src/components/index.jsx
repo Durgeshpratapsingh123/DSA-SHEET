@@ -9,14 +9,30 @@ const DSA = ({ data, setData, isHomeScreen, selectedContentIndex }) => {
     let [searchValue, setSearchValue] = useState('')
     const isDarkMode = data.data.header.darkMode
     return (
+        <>
+        <Flex 
+            className={isDarkMode ? '' : 'bg-lines-light'}
+            position={'fixed'}
+            zIndex={-1}
+            top={0}
+            left={0} 
+            w={'100vw'} 
+            minH={'100vh'}
+            h={'auto'}
+            flexDirection={'column'} 
+            alignItems={'center'} 
+            justifyContent={'space-between'}
+            bg={isDarkMode ? 'fullPageColor_dark' : ''}
+
+        />
         <Flex
             className={'app'}
             w={'100vw'}
-            h={'100vh'}
+            minH={'100vh'}
             flexDirection={'column'}
             alignItems={'center'}
             justifyContent={'space-between'}
-            bg={isDarkMode ? 'fullPageColor_dark' : 'fullPageColor'}
+            // bg={isDarkMode ? 'fullPageColor_dark' : 'fullPageColor'}
         >
             <Header
                 data={data}
@@ -35,6 +51,7 @@ const DSA = ({ data, setData, isHomeScreen, selectedContentIndex }) => {
             />
             <Footer data={data} />
         </Flex>
+        </>
     )
 }
 

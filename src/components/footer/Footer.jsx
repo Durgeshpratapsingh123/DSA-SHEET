@@ -61,13 +61,13 @@ const Footer = () => {
                     h={'fit-content'}
                     px={8}
                     py={4}
-                    bg={'secondaryColor'}
+                    bg={'black'}
                     borderRadius={'16px'}
                     fontWeight={'lg'}
                     fontSize={'md'}
                     fontFamily={'customFamily'}
                     fontStyle={'normal'}
-                    color={'defaultColor'}
+                    color={'gray.100'}
                 >
                     This Project
                 </Text>
