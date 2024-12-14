@@ -4,7 +4,7 @@ const Footer = () => {
     const originalDsaSheetLink =
         'https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/'
     const originalAuthorLinkedInLink = 'https://www.linkedin.com/in/striver/'
-    const gitHubLink = 'https://github.com/Durgeshpratapsingh123'
+    const gitHubLink = 'https://github.com/Durgeshpratapsingh123/DSA-SHEET'
 
     return (
         <Flex
